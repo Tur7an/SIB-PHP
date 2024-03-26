@@ -1,0 +1,107 @@
+* {
+    /* css universal memungkinkan semua yang ada didalam
+    html terpengaruh dengan css universal */
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+.header {
+    background-image: url('../img/header1.jpg');
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    background-position: center center;
+    padding: 20px;
+    text-align: center;
+    color: slategray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.navbar {
+    overflow: hidden;
+    background-color:slategray;
+    justify-content: center;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.navbar a{
+    float: left;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    color:white;
+    /* margin: 30px; */
+}
+.navbar a:hover {
+    background-color:aliceblue;
+    color: black;
+}
+.column{
+    float: left;
+    padding: 10px;
+}
+.column.side{
+    width: 25%;
+}
+.column.middle{
+    width: 50%;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;  /*membersihkan float left sebelumnya*/
+}
+.footer{
+    background-color: khaki;
+    padding: 10px;
+    text-align: center;
+}
+img{
+    border-radius: 200px;
+    width: 200px;
+}
+.column.middle p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.column.middle h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: slategrey;
+}
+.biodata {
+    padding-left: 220px;
+    text-align: center;
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: slategray;
+}
+fieldset, legend{
+    border-width: 3px;
+    border-radius: 15px;
+    color:black;
+
+}
+legend{
+    padding: 10px;
+    border-width: 2px;
+    color: midnightblue;
+    font-weight: bold;
+    font-size: 14pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li  {
+    list-style: none;
+}
+ul li a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+table{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
